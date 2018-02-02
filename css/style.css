@@ -1,0 +1,59 @@
+.brand_color {
+	color: white;
+	font-size: 1.8em;
+}
+
+body {
+	padding: 10px;
+	margin: 10px;
+	font-family: 'Titillium Web', sans-serif;	
+}
+
+h1 {
+    text-align: center;
+}
+
+.button {
+	background-color: rgba(31, 163, 31, 0.829);
+	color: white;
+	cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgba(31, 163, 31, 0.829);
+    color: black;
+}
+
+
+.column-border {
+	border-radius: 10px;
+}
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-scroll {
+	height: 400px !important;
+    overflow-y: scroll;
+}
+
+td, th {
+    border: 1px solid white;
+    text-align: center;
+    padding: 5px;
+}
+
+tr:nth-child(even) {
+    background:lightblue;
+}
+
+tr:nth-child(odd){
+	background-color: lightblue;
+
+}
+
+
+
