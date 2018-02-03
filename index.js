@@ -1,6 +1,6 @@
 // Get references to the tbody element, input field and button
 var $tbody = document.querySelector("tbody");
-var $dateInput = document.querySelector("#datetime");
+var $dateInput = document.querySelector("#date");
 var $cityInput = document.querySelector("#city");
 var $stateInput = document.querySelector("#state");
 var $countryInput = document.querySelector("#country");
@@ -40,12 +40,12 @@ function handleSearchButtonClick(event) {
   event.preventDefault();
 
   var filterDate = $dateInput.value.trim();
-  if (filterDate !="") {
-    filteredData = filteredData.filter(function(data) {
+  if (filterDate != "") {
+    filteredData = dataSet.filter(function (data) {
       var dataDate = data.datetime;
-      return typeof dataDate === filterDate;
+      return dataDate === filterDate;
     });
-  }
+};
 
   var filterCity = $cityInput.value.trim().toLowerCase();
   if (filterCity !="") {
@@ -82,6 +82,11 @@ function handleSearchButtonClick(event) {
   }
 function resetData() {
   filteredData = dataSet;
+  $dateInput.value = "";
+  $cityInput.value = "";
+  $stateInput.value = "";
+  $countryInput.value = "";
+  $shapeInput.value = "";
   renderTable();
 }
 
