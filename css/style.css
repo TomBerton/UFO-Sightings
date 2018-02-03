@@ -1,26 +1,37 @@
+/* Styling for HTML elements */
+body {
+	padding: 10px;
+	margin: 10px;
+	font-family: 'Titillium Web', sans-serif;
+	font-size: 14px;
+	line-height: 150%;
+	background: #5073a2;
+	
+  }
+
 .brand_color {
 	color: white;
 	font-size: 1.8em;
 }
 
-body {
-	padding: 10px;
-	margin: 10px;
-	font-family: 'Titillium Web', sans-serif;	
+.jumbotron {
+	background-position: center;
+	color: white;
+	background-image: no-repeat;
 }
-
 h1 {
-    text-align: center;
+	text-align: center;
+	color: white;
 }
 
 .button {
-	background-color: rgba(31, 163, 31, 0.829);
+	background-color :#05377b;
 	color: white;
 	cursor: pointer;
 }
 
 .button:hover {
-    background-color: rgba(31, 163, 31, 0.829);
+    background-color: white;
     color: black;
 }
 

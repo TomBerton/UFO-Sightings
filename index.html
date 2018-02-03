@@ -16,8 +16,8 @@
 <body>
   <div class="container-fluid">
     <div class="page-header">
-      <div class="jumbotron">
-        <h1>World UFO Sightings </h1>
+      <div class="jumbotron" style="background-image: url(alien_lights.jpg);">
+        <h1>UFO Sightings</h1>
       </div>
       <div class="row">
         <div class="col-md-4">
@@ -36,10 +36,10 @@
             <div class="form-group row">
               <div class="col-xs-4">
                 <input type="text" class="form-control" id="country" placeholder="Country" onfocus="this.value=''" value="">
-                          <select id="selDataset" onchange="getData(this.value)">
+                       <!--   <select id="selDataset" onchange="getData(this.value)">
                     <option value="dataset1">United States</option>
                     <option value="dataset2">Great Britain</option>
-                </select>
+                </select> -->
               </div>
 
               <div class="col-xs-6">
@@ -48,7 +48,7 @@
             </div>
           </form>
           <div>
-            <button id="search" class="btn btn-primary">Search</button>
+            <button id="search" class="btn button">Search</button>
             <button id="reset" class="btn button" onclick="resetForm()">Reset Search</button>
           </div>
         </div>
