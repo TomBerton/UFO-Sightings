@@ -13,43 +13,45 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body style="background-image: url(images/stars.jpg);">
   <div class="container-fluid">
     <div class="page-header">
-      <div class="jumbotron" style="background-image: url(images/alien_lights.jpg);">
+      <div class="jumbotron" style="background-image: url(images/aliens.jpg);">
         <h1>UFO Sightings</h1>
       </div>
       <div class="row">
         <div class="col-md-4">
           <form id="myForm"> 
             <div class="form-group row">
-              <div class="col-xs-4">
-                <input type="text" class="form-control" id="date" placeholder="Date" onfocus="this.value=''" value="">
+              <div class="col-xs-6">
+                <input type="text" class="form-control" id="date" placeholder="Date (mm/dd/yyyy)" onfocus="this.value=''" value="">
+              </div>
+              </div>
+              <div class="form-group row"> 
+              <div class="col-xs-5">
+                  <input type="text" class="form-control" id="country" placeholder="Country" onfocus="this.value=''" value="">
+                
               </div>
               <div class="col-xs-5">
-                <input type="text" class="form-control" id="city" placeholder="City" onfocus="this.value=''" value="">
-              </div>
-              <div class="col-xs-3">
                 <input type="text" class="form-control" id="state" placeholder="State" onfocus="this.value=''" value="">
               </div>
             </div>
             <div class="form-group row">
               <div class="col-xs-4">
-                <input type="text" class="form-control" id="country" placeholder="Country" onfocus="this.value=''" value="">
-                       <!--   <select id="selDataset" onchange="getData(this.value)">
-                    <option value="dataset1">United States</option>
-                    <option value="dataset2">Great Britain</option>
-                </select> -->
+                  <input type="text" class="form-control" id="city" placeholder="City" onfocus="this.value=''" value="">
               </div>
-
               <div class="col-xs-6">
                 <input type="text" class="form-control" id="shape" placeholder="Shape" onfocus="this.value=''" value="">
               </div>
             </div>
           </form>
-          <div>
+          <div class="form-group row">
+              <div class="col-xs-4">
             <button id="search" class="btn button">Search</button>
+          </div>
+            <div class="col-xs-4">
             <button id="reset" class="btn button" onclick="resetForm()">Reset Search</button>
+          </div>
           </div>
         </div>
       </div>

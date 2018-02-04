@@ -5,28 +5,23 @@ body {
 	font-family: 'Titillium Web', sans-serif;
 	font-size: 14px;
 	line-height: 150%;
-	background: #5073a2;
-	
   }
 
-.brand_color {
-	color: white;
-	font-size: 1.8em;
-}
 
 .jumbotron {
+	background-color: #032656;
 	background-position: center;
-	color: white;
-	background-image: no-repeat;
+	color: #032656;
+	
 }
 h1 {
 	text-align: center;
 	color: white;
-}
+}	
 
 .button {
-	background-color :#05377b;
-	color: white;
+	background-color :lightblue;
+	color: #021b3d;
 	cursor: pointer;
 }
 
